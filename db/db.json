@@ -97,18 +97,8 @@
       "opcionais": [
         "Bacon"
       ],
-      "status": "Em produção",
-      "id": 6
-    },
-    {
-      "nome": "test3",
-      "carne": "Maminha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Cheddar"
-      ],
       "status": "Finalizado",
-      "id": 7
+      "id": 6
     },
     {
       "nome": "teste22",
