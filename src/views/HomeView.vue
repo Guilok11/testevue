@@ -10,7 +10,7 @@
 import Banner from "../components/Banner.vue"
 import BurgerForm from "../components/BurgerForm.vue";
 
-export default{
+export default {
   name: "Home",
   components: {
     Banner,

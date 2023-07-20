@@ -70,7 +70,7 @@ export default {
       this.opcionaisdata = data.opcionais;
     },
 
-    async createBurger(e){
+    async createBurger(e) {
       e.preventDefault();
 
       if (!this.nome) {
@@ -105,7 +105,7 @@ export default {
 
       const req = await fetch("http://localhost:3000/burgers", {
         method: "POST",
-        headers: {"Content-Type": "application/json"},
+        headers: { "Content-Type": "application/json" },
         body: dataJson
       });
 
@@ -122,7 +122,7 @@ export default {
     }
   },
 
-  mounted () {
+  mounted() {
     this.getIngredientes();
   },
 
@@ -142,6 +142,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  
 }
 
 label {
@@ -150,21 +151,25 @@ label {
   color: #111;
   padding: 5px 10px;
   border-left: 4px solid #fcba03;
+  
 }
 
 input,
 select {
   padding: 5px 10px;
   width: 300px;
+  
 }
 
 #opcionais-container {
   flex-direction: row;
   flex-wrap: wrap;
+  
 }
 
 #opcionais-title {
   width: 100%;
+  
 }
 
 .checkbox-container {
@@ -172,16 +177,19 @@ select {
   align-items: flex-start;
   width: 50%;
   margin-bottom: 20px;
+  
 }
 
 .checkbox-container span,
 .checkbox-container input {
   width: auto;
+  
 }
 
 .checkbox-container span {
   margin-left: 6px;
   font-weight: bold;
+
 }
 
 .submit-btn {
@@ -191,7 +199,7 @@ select {
   border: 2px solid #111;
   padding: 10px;
   font-size: 16px;
-  margin: 0 auto;
+  margin: auto auto;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -200,6 +208,4 @@ select {
   background-color: transparent;
   color: #111;
 }
-
-
 </style>
