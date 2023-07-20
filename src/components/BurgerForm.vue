@@ -35,9 +35,11 @@
   </template>
   
   <script>
+  import Message from './Message.vue';
   
   export default {
     name: "BurgerForm",
+
     data() {
       return {
         paes: null,
@@ -79,17 +81,24 @@
         });
 
         const res = await req.json();
-
+        
+        this.msg = `Pedido N° ${res.id} realizado com sucesso`
+        //limpa msg
+        setTimeout(() => this.msg = "", 3000);
+        
         //limpa
         this.nome = "";
         this.carne = "";
         this.pao = "";
         this.opcionais = "";
-        
+
       }
     },
     mounted () {
       this.getIngredientes()
+    },
+    components: {
+      Message
     }
   }
   </script>
