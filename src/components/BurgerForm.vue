@@ -85,7 +85,7 @@
         this.msg = `Pedido N° ${res.id} realizado com sucesso`
         //limpa msg
         setTimeout(() => this.msg = "", 3000);
-        
+
         //limpa
         this.nome = "";
         this.carne = "";
@@ -118,7 +118,7 @@
     label {
       font-weight: bold;
       margin-bottom: 15px;
-      color: #222;;
+      color: #111;;
       padding: 5px 10px;
       border-left: 4px solid #fcba03;
     }
